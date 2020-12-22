@@ -1,0 +1,80 @@
+@font-face
+    font-family: "Russo-One"
+    src: url(~static/fonts/RussoOne/Russo_One.otf) format("opentype")
+
+@font-face
+    font-family: "Barlow-Regular"
+    src: url(~static/fonts/Barlow/Barlow-Regular.ttf) format("truetype")
+
+@font-face
+    font-family: "Barlow-Bold"
+    src: url(~static/fonts/Barlow/Barlow-Bold.ttf) format("truetype")
+
+.white-font
+    color: #fff
+
+.opacity-font
+    opacity: 0.5
+
+.header3
+    font-family: Russo-One
+    font-size: 35px
+    line-height: 1.2
+
+.bodyTitle
+    font-family: Barlow-Bold
+    font-size: 22px
+    line-height: 1.4
+
+.bodyText
+    font-family: Barlow-Regular
+    font-size: 14px
+    line-height: 1.4
+
+.caption
+    font-family: Barlow-Bold
+    font-size: 8px
+    line-height: 1.4
+    text-transform: uppercase
+
+@media (min-width: 776px)
+.header3
+    font-size: calc(35px + 5 * ((100vw - 320px) / 680))
+
+.bodyText
+    font-size: calc(14px + 2 * ((100vw - 320px) / 680))
+
+.bodyTitle
+    font-size: calc(22px + 3 * ((100vw - 320px) / 680))
+
+.caption
+    font-size: calc(8px + 2 * ((100vw - 320px) / 680))
+
+@media (min-width: 990px)
+    .header3
+        font-family: Russo-One
+        font-size: 40px
+        line-height: 1.2
+        margin-bottom: 30px
+
+    .bodyText
+        font-family: Barlow-Regular
+        font-size: 16px
+        line-height: 1.6
+
+    .bodyTitle
+        font-family: Barlow-Bold
+        font-size: 25px
+        line-height: 1.4
+        margin-bottom: 15px
+
+    .caption
+        font-family: Barlow-Bold
+        font-size: 10px
+        line-height: 1.4
+        text-transform: uppercase
+
+
+    // 776 < Início de celular
+    // 990 < Início de tablet
+    // 990 > Notebook
