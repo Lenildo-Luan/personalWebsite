@@ -1,14 +1,27 @@
 <template lang="pug">
-div.containerFluid
-  div.containerFixed
-    NuxtLink(v-for='link in links', :key='link.id', :to='link.to', :class='link.class').bodyText {{link.name}}
+.containerFluid
+  .containerFixed
+    NuxtLink.bodyText(
+      v-for='link in links',
+      :key='link.id',
+      :to='link.to',
+      :class='link.class'
+    ) {{ link.name }}
     Nuxt
+  div(v-for='line in lines', :class='line.class')
 </template>
 
 <script>
 export default {
   data: () => {
     return {
+      lines: [
+        { class: 'l1' },
+        { class: 'l2' },
+        { class: 'l3' },
+        { class: 'l4' },
+        { class: 'l5' },
+      ],
       links: [
         {
           id: 0,
@@ -44,6 +57,7 @@ export default {
 a
   text-decoration: none
   color: #101010
+  z-index: 20
 
 .containerFluid
   width: 100%
@@ -54,9 +68,10 @@ a
 
 .containerFixed
   width: 1241px
-  min-width: 990px
+  max-width: 1400px
   height: 90%
   position: relative
+  z-index: 10
 
 .link1
   position: absolute
@@ -77,4 +92,49 @@ a
   position: absolute
   bottom: 0
   right: 0
+
+@mixin line($distance)
+  height: 100vh
+  border-left: solid #000 1px
+  position: absolute
+  opacity: 0.1
+  left: $distance
+  z-index: 0
+
+.l1
+  @include line(15%)
+
+.l2
+  @include line(32.5%)
+
+.l3
+  @include line(50%)
+
+.l4
+  @include line(67.5%)
+
+.l5
+  @include line(85%)
+
+@media (max-width: 776px)
+  .l1
+    display: none
+  .l2
+     @include line(25%)
+  .l4
+     @include line(75%)
+  .l5
+    display: none
+  .link1
+    position: relative
+  .link2
+    position: relative
+  .link3
+    position: relative
+  .link4
+    position: relative
+  .containerFixed
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
 </style>
