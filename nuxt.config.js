@@ -16,6 +16,7 @@ export default {
         content: 'Website pessoal de Lenildo Luan'
       }
     ],
+  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~assets/sass/_global.sass'],
