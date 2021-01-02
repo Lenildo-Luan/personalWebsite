@@ -16,7 +16,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Lenildo Luan - Serviços',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Desenvolvo projetos que causem impacto e experiências de usuário que resolvam problemas reais.',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="sass">

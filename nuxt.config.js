@@ -4,14 +4,18 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'personalWebsite',
-    meta: [
+    title: 'Lenildo Luan',
+    meta: [ 
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { name: 'Content-Type', content: 'text/html; charset=utf-8' },
+      { name: 'Content-Type', content: 'text/html; charset=ISO-8859-1' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Website pessoal de Lenildo Luan'
+      }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-  },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['~assets/sass/_global.sass'],

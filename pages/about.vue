@@ -12,11 +12,11 @@
       <br><br>
     .sigaSubsection
       p.caption Acompanhe minha jornada:
-      a.bodyTitle(v-for='link in links', :href="link.to", target="_blank") {{ link.name }}
+      a.bodyTitle(v-for='link in links', :href='link.to', target='_blank') {{ link.name }}
     //- NuxtLink.aboutButton.bodyText(to="/contact") Fale comigo
 
   .aboutSection2
-    img(src="~static/images/eu.png", width="80%")
+    img(src='~static/images/eu.png', width='80%')
 </template>
 
 <script>
@@ -28,6 +28,18 @@ export default {
         { name: 'Github', to: 'https://github.com/Lenildo-Luan' },
         { name: 'Dribbble', to: 'https://dribbble.com/lluan_' },
         { name: 'Behance', to: 'https://www.behance.net/lenildolua3ae1' },
+      ],
+    }
+  },
+  head() {
+    return {
+      title: 'Lenildo Luan - Sobre mim',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Sou um estudante de Engenharia de Computação na UFPB, onde busco me especializar em pesquisa operacional, área da computação utilizada por grandes empresas como Amazon para tomar melhores decisões.',
+        },
       ],
     }
   },
@@ -70,11 +82,11 @@ export default {
   justify-content: center
 
 .sigaSubsection
-    a
-      font-family: Barlow-Regular
-      margin-right: 14px
-      text-decoration: none
-      color: #060606
+  a
+    font-family: Barlow-Regular
+    margin-right: 14px
+    text-decoration: none
+    color: #060606
 
 @media (max-width: 990px)
   .aboutContainer

@@ -24,6 +24,18 @@ export default {
       ],
     }
   },
+  head() {
+    return {
+      title: 'Lenildo Luan - Contato',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Não tenha vergonha, entre em contato e vamos conversar :D',
+        },
+      ],
+    }
+  },
 }
 </script>
 
