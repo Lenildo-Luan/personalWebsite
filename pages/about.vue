@@ -38,7 +38,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Sou um estudante de Engenharia de Computação na UFPB, onde busco me especializar em pesquisa operacional, área da computação utilizada por grandes empresas como Amazon para tomar melhores decisões.',
+          content:
+            'Sou um estudante de Engenharia de Computação na UFPB, onde busco me especializar em pesquisa operacional, área da computação utilizada por grandes empresas como Amazon para tomar melhores decisões.',
         },
       ],
     }

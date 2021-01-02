@@ -3,16 +3,16 @@
   .servicesSection1
     p.header3 Desenvolvimento Web/Mobile
     p.bodyText.
-       Desenvolvo projetos que causem impacto. Desde um aplicativo que muda a forma como uma universidade executa um evento até 
-       websites e incríveis. Adoro estudar e trabalhar com desenvolvimento, por isso estou sempre me aperfeiçoando e pondo em prática
-       novos conhecimentos.
+      Desenvolvo projetos que causem impacto. Desde um aplicativo que muda a forma como uma universidade executa um evento até 
+      websites e incríveis. Adoro estudar e trabalhar com desenvolvimento, por isso estou sempre me aperfeiçoando e pondo em prática
+      novos conhecimentos.
   .servicesSection2
     p.header3 UX/UI Design
     p.bodyText.
       Crio experiências de usuário que resolvam problemas reais, baseado em dados e pesquisas com usuários. A partir delas,
       monto interfaces criativas que conversem com sua marca. Antes de ter um produto é necessário ter um projeto, por isso sempre busco
       me aprimorar sobre interface e experiência de usuário.
-  NuxtLink.servicesButton.bodyText(to="/contact") Fale comigo
+  NuxtLink.servicesButton.bodyText(to='/contact') Fale comigo
 </template>
 
 <script>
@@ -24,7 +24,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Desenvolvo projetos que causem impacto e experiências de usuário que resolvam problemas reais.',
+          content:
+            'Desenvolvo projetos que causem impacto e experiências de usuário que resolvam problemas reais.',
         },
       ],
     }
