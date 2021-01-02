@@ -1,10 +1,10 @@
 <template lang="pug">
-  div.homeContainer
-    div.homeText
+  .homeContainer
+    .homeText
       p.header3 Lenildo Luan
       p.bodyText Developer & UX/UI Designer
 
-    img(src="~static/images/logo.png", width="325px", height="325px", class="logoImage")
+    img(src="~static/images/logo.png", class="logoImage")
 </template>
 
 <script>
@@ -21,17 +21,27 @@ export default {}
   position: absolute
   top: 50%
   left: 50%
-  margin-left: -162px
-  margin-top: -162px
+  transform: translate(-50%, -50%)
+  width: 325px
+  height: 325px
 
 .homeText
   height: 100px
   position: absolute
   top: 50%
-  left: 10%
+  margin-left: 70px
   margin-top: -50px
 
-@media (max-width: 776px)
+@media (max-width: 990px)
   .homeContainer
-    position: absolute
+    min-height: 100vh
+  .homeText
+    width: 100%
+    top: 85%
+    left: 50%
+    margin-left: 0px
+    transform: translate(-50%, -0%)
+    display: flex
+    flex-direction: column
+    align-items: center
 </style>
